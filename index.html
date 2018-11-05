@@ -4,6 +4,7 @@
    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>MegaPlay</title>
 <!--==========================================================================================================================--> 
                                                   <!--  START Styles  -->
@@ -23,71 +24,238 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
 <!--  ===Styles CSS===  -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" media="screen">
                                                  
-                                                 
+    <link rel="stylesheet" href="./css/style.css" media="screen">  
+                                                
+                                                                                                                                      
                                                  
                                                   <!--  END Styles  -->  
 <!--==========================================================================================================================--> 
-                                                                      
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="./js/jquery.timelinr-0.9.7.js"></script>
+<script type="text/javascript"> 
+$(function(){
+$().timelinr({
+autoPlay: 'true',
+autoPlayDirection: 'forward',
+startAt: 4
+})
+});
+</script><script type="text/javascript"> 
+$(function(){
+   $().timelinr({
+      orientation: 'horizontal',
+      // value: horizontal | vertical, default to horizontal
+
+      containerDiv: '#timeline',
+      // value: any HTML tag or #id, default to #timeline
+
+      <a href="https://www.jqueryscript.net/time-clock/">date</a>sDiv: '#dates',
+      // value: any HTML tag or #id, default to #dates
+
+      datesSelectedClass: 'selected',
+      // value: any class, default to selected
+
+      datesSpeed: 'normal',
+      // value: integer between 100 and 1000 (recommended) or 'slow', 'normal' or 'fast'; default to normal
+
+      issuesDiv : '#issues',
+      // value: any HTML tag or #id, default to #issues
+
+      issuesSelectedClass: 'selected',
+      // value: any class, default to selected
+
+      issuesSpeed: 'fast',
+      // value: integer between 100 and 1000 (recommended) or 'slow', 'normal' or 'fast'; default to fast
+
+      issuesTransparency: 0.2,
+      // value: integer between 0 and 1 (recommended), default to 0.2
+
+      issuesTransparencySpeed: 500,
+      // value: integer between 100 and 1000 (recommended), default to 500 (normal)
+
+      prevButton: '#prev',
+      // value: any HTML tag or #id, default to #prev
+
+      nextButton: '#next',
+      // value: any HTML tag or #id, default to #next
+
+      arrowKeys: 'false',
+      // value: true/false, default to false
+
+      startAt: 1,
+      // value: integer, default to 1 (first)
+
+      autoPlay: 'false',
+      // value: true | false, default to false
+
+      autoPlayDirection: 'forward',
+      // value: forward | backward, default to forward
+
+      autoPlayPause: 2000
+      // value: integer (1000 = 1 seg), default to 2000 (2segs)< });
+
+   });   </script>                                                 
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="fixed-top sticky">
             <div class="menu-icon">
                 <i class="fa fa-bars fa-2x"></i>
             </div>
-            <div class="logo">
-                LOGO
-                <img src="./img/Logo_1.png" alt="" id="l1">
+            <div class="logo" id="div1">
+                <img src="./img/Logo_1.png" alt="" id="l1" >
+            </div>
+            <div class="logo2" id="div2">
+                <img src="./img/Logo_2.png" alt="" id="l2" >
             </div>
             <div class="menu">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="wall.html">Wall</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
+    <div class="content">
+    <div class="container" >
+    <div class="row" id="about">
+    <div class="col-lg-12 col-xl-12">
+    <h3 class="display-4 text-center">Megaplay '18</h3>
+    </div>
+
+    <div class="col-lg-6 col-xl-6">
+    <p class="text-justify">
+    Winter is Coming!
+    Karunyans, its’s that time of the year again, keep your prayers ready,cause Winter is coming. Soon it will be December, time for Christmas, which brings us to one of the most awaited events in the campus, the Christmas Megaplay. Karunyans truly believe that nothing can parallel the spirit of Christmas.
+
+    </p>
+    <p class="text-justify">
+    The Christmas Mega Play hosted annually by Karunya where almost every single student plays an irreplaceable role, ensure the success of the event and is irrefutably reflected by its longevity. The event which marks the end of a year of good deeds and the beginning of a new year full of great opportunities. Engineers weave their dreams into reality, and Karunya believes in fostering those creative juices by giving a platform for their artistic senses too. Various programmes and events for the promotion of multifarious manifestations of imagination and art are conducted.
+    </p>
+
+    <p class="text-justify">
+    So what are you waiting for? Start contributing to making this year's annual Megaplay a grand success as we wish each others a Very Happy Christmas.
+    </p>
+    </div>
+    <div class="col-lg-6 col-xl-6 home-profile-image">
+    <img src="./img/rigthSide.png" alt=""><br><br>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div id="timeline">
+    <ul id="dates">
+      <li><a href="#1900">1900</a></li>
+      <li><a href="#1930">1930</a></li>
+      <li><a href="#1944">1944</a></li>
+      <li><a href="#1950">1950</a></li>
+      <li><a href="#1971">1971</a></li>
+      <li><a href="#1977">1977</a></li>
+      <li><a href="#1989">1989</a></li>
+      <li><a href="#1999">1999</a></li>
+      <li><a href="#2001">2001</a></li>
+      <li><a href="#2011">2011</a></li>
+    </ul>
+    <ul id="issues">
+      <li id="1900">
+        <img src="images/1.png" width="256" height="256" />
+        <h1>1900</h1>
+        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+      </li>
+      <li id="1930">
+        <img src="images/2.png" width="256" height="256" />
+        <h1>1930</h1>
+        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+      </li>
+      <li id="1944">
+        <img src="images/3.png" width="256" height="256" />
+        <h1>1944</h1>
+        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+      </li>
+      <li id="1950">
+        <img src="images/4.png" width="256" height="256" />
+        <h1>1950</h1>
+        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+      </li>
+      <li id="1971">
+        <img src="images/5.png" width="256" height="256" />
+        <h1>1971</h1>
+        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+      </li>
+      <li id="1977">
+        <img src="images/6.png" width="256" height="256" />
+        <h1>1977</h1>
+        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+      </li>
+      <li id="1989">
+        <img src="images/7.png" width="256" height="256" />
+        <h1>1989</h1>
+        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+      </li>
+      <li id="1999">
+        <img src="images/8.png" width="256" height="256" />
+        <h1>1999</h1>
+        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+      </li>
+      <li id="2001">
+        <img src="images/9.png" width="256" height="256" />
+        <h1>2001</h1>
+        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+      </li>
+      <li id="2011">
+        <img src="images/10.png" width="256" height="256" />
+        <h1>2011</h1>
+        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+      </li>
+    </ul>
+    <div id="grad_left"></div>
+    <div id="grad_right"></div>
+    <a href="#" id="next">+</a>
+    <a href="#" id="prev">-</a>
+  </div>
 
 
-            <div class="content">
-                  <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-                  <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-            </div>
+
     
 
-      <script type="text/javascript">
-
-      // Menu-toggle button
-
-      $(document).ready(function() {
-            $(".menu-icon").on("click", function() {
-                  $("nav ul").toggleClass("showing");
-            });
-      });
-
-      // Scrolling Effect
-
-      $(window).on("scroll", function() {
-            if($(window).scrollTop()) {
-                  $('nav').addClass('black');
-            }
-
-            else {
-                  $('nav').removeClass('black');
-            }
-      })
 
 
-      </script>
+    <script type="text/javascript">
+
+    // Menu-toggle button
+
+    $(document).ready(function() {
+    $(".menu-icon").on("click", function() {
+    $("nav ul").toggleClass("showing");
+    });
+    });
+
+    // Scrolling Effect
+
+    $(window).on("scroll", function() {
+    if($(window).scrollTop()) {
+    $('nav').addClass('black');
+    $("#l1").hide();
+    $("#l2").show();
+
+
+
+    }
+
+    else {
+    $('nav').removeClass('black');
+    $("#l2").hide();
+    $("#l1").show() ; 
+    }
+    })
+
+    </script>
 
    
    

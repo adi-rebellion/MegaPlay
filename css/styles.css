@@ -156,10 +156,21 @@ header {
     width: 150px;
     height: auto;
 }
+#l2{
+    width: 180px;
+    height: auto;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    display:none;
+}
+
+
  
 nav {
       position: fixed;
       width: 100%;
+    height: 100px;
       line-height: 60px;
 }
  
@@ -213,6 +224,12 @@ nav ul li a {
     #l1{
         width: 75px;
         height: auto;
+        position: fixed;
+        top: 10px;
+    }
+    #l2{
+        width: 75px;
+        height: auto;
     }
  
       nav ul {
@@ -240,3 +257,9 @@ nav ul li a {
       }
  
 }
+
+
+
+
+
+
